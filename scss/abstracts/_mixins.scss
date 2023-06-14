@@ -1,0 +1,26 @@
+@use 'breakpoints' as *;
+
+// breakpoints
+
+@mixin mq($key) {
+
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+//theme switch
+
+@mixin spread-map($map: ()) {
+  @each $key, $value in $map {
+      #{$key}: $value;
+  }
+}
+
+//Transition
+
+@mixin transition($properties, $duration: 0.3s, $timing-function: ease) {
+  transition: $properties $duration $timing-function;
+}

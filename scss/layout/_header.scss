@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts' as *;
+
+header {
+    padding: 1rem 0;
+}
+
+.profile_container {
+    border-radius: 50% 50% 0 50%;
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    .profile_title {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
+
+.profile_title {
+    .title {
+        color: var(--text-30);
+    }
+    .subtitle {
+        font-size: 1.5rem;
+        color: var(--text-20);
+        font-family: $font-inter-regular;
+    }
+}
+
+.hero_left_content {
+    width: 60%;
+    padding-right: 14rem;
+}

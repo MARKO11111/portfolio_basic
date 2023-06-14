@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.input_label {
+    color: var(--text-30);
+    font-family: $font-inter-regular;
+    margin-bottom: 0.75rem;
+}
+
+input, textarea {
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid hsla(0, 0%, 100%, 0.3);
+    outline: none;
+    color: hsl(0,0%, 100%);
+    width: 100%;
+    &::placeholder {
+        color: hsla(0, 0%, 100%, 0.3);
+    }
+    &:not(:placeholder-shown) {
+        border: 1px solid hsla(0, 0%, 100%, 0.7);
+    }
+    &:focus {
+        border: 1px solid hsla(0, 0%, 100%, 0.7);
+    }
+}
+
+textarea {
+    min-height: 10rem;
+    resize: vertical;
+}

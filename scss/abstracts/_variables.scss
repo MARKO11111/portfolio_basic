@@ -1,0 +1,77 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// container max-width
+@use 'functions' as *;
+
+$max-width: 1200px;
+
+/// font family
+
+$font-inter-regular: InterRegular, sans-serif; 
+$font-inter-semibold: InterSemibold, sans-serif;
+$font-sora-regular: SoraRegular, sans-serif;
+$font-sora-semibold: SoraSemibold, sans-serif;
+
+/// font sizes
+
+$base-size: 1rem;
+$fs-h1: 4rem;
+$fs-h2: 2.5rem;
+$fs-h3: 2rem;
+$fs-h4: 1.25rem;
+$fs-small: 0.875rem;
+
+
+$filter: invert(100%) sepia(64%) saturate(0%) hue-rotate(167deg) brightness(115%) contrast(100%);
+ 
+/// colors
+
+$--primary-0: --primary-0;
+$--primary-10: --primary-10;
+$--primary-20: --primary-20;
+$--primary-30: --primary-30;
+$--text-0: --text-0;
+$--text-10: --text-10;
+$--text-15: --text-15;
+$--text-20: --text-20;
+$--text-30: --text-30;
+$--img-filter: --img-filter;
+
+// Default theme
+$theme-map-light: (
+  $--primary-0: hsl(160, 87%, 24%),
+  $--primary-10: hsla(160, 87%, 24%, 0.1),
+  $--primary-20: hsl(0, 0%, 100%),
+  $--primary-30: hsl(0, 0%, 100%),
+  $--text-0: hsl(0, 0%, 0%),
+  $--text-10: hsl(0, 0%, 38%),
+  $--text-15: hsl(0, 0%, 30%),
+  $--text-20: hsl(0, 0%, 86%),
+  $--text-30: hsl(0, 0%, 100%),
+);
+
+// Override the default light theme
+$theme-map-dark: (
+  --primary-0: hsl(160, 87%, 24%),
+  --primary-10: hsl(161, 89%, 7%),
+  --primary-20: hsl(160, 84%, 5%),
+  --primary-30: hsl(160, 87%, 24%),
+  --text-0: hsl(0, 0%, 100%),
+  --text-10: hsl(0, 0%, 81%),
+  --text-15: hsl(0, 0%, 30%),
+  --text-20: hsl(0, 0%, 86%),
+  --text-30: hsl(0, 0%, 100%),
+  --img-filter: invert(100%) sepia(64%) saturate(0%) hue-rotate(167deg) brightness(115%) contrast(100%),
+);
+
+// Scrollbar
+
+$scrollbarBG: #CFD8DC;
+$thumbBG: #90A4AE;
+
+
+
+
+

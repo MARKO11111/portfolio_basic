@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+h1, h2, h3, h4 {
+  font-family: $font-inter-regular;
+  color: var(--text-0);
+}
+
+h1 {
+  font-size: $fs-h1;
+}
+
+h2 {
+  font-size: $fs-h2;
+}
+
+h3 {
+  font-size: $fs-h3;
+}
+
+h4 {
+  font-size: $fs-h4;
+}

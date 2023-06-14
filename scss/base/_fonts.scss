@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: InterRegular;
+    src: url(../src/fonts/Inter-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: InterSemiBold;
+    src: url(../src/fonts/Inter-SemiBold.ttf);
+  }
+  
+  @font-face {
+    font-family: SoraRegular;
+    src: url(../src/fonts/Sora-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: SoraSemiBold;
+    src: url(../src/fonts/Sora-SemiBold.ttf);
+  }

@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+@use '../abstracts' as *;
+
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex_space_between {
+  justify-content: space-between;
+}
+
+.justify_center {
+  justify-content: center;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.align_start {
+  align-items: flex-start;
+}
+
+.gap_1 {
+  gap: 1rem;
+}
+
+.gap_2 {
+  gap: 2rem;
+}
+
+.gap_3 {
+  gap: 3rem;
+}
+
+.bckg_primary_10 {
+  background-color: var(--primary-10);
+}
+
+.bckg_primary_0 {
+  background-color: var(--primary-0);
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lh_base {
+  line-height: 1.5rem;
+}
+
+.img_responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img_filter {
+  filter: var(--img-filter);
+}
+
+.inter_bold {
+  font-family: $font-inter-semibold;
+}
+
+.border_radius_1 {
+  border-radius: 1rem;
+}
+

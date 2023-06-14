@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.skills_section {
+    h2 {
+        margin-bottom: 2.5rem;
+    }
+    .card_wrapper {
+        article {
+            padding: 2rem;
+            max-width: 30%;
+        }
+    }
+}

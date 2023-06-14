@@ -1,0 +1,23 @@
+.toolbox_section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    .toolbox_wrapper {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+.reveal.active {
+    animation: myAnim .8s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

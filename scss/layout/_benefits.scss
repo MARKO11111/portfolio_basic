@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.benefits_section {
+    h2 {
+        margin-bottom: 2.5rem;
+    }
+
+    article {
+        padding: 2rem;
+        max-width: 30%;
+    }
+}

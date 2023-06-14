@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@use '../abstracts' as *;
+
+.btn {
+    padding: 0.875rem 1.5rem;
+    background-color: var(--primary-0);
+    border: 1px solid var(--primary-0);
+    color: var(--text-30);
+    border-radius: 0.875rem;
+    cursor: pointer;
+    font-family: $font-sora-semibold;
+    &:hover {
+        background-color: hsl(160, 92%, 20%);
+    }
+    &.big {
+        padding: 1.125rem 2.125rem;
+    }
+    &.outlined {
+        background-color: transparent;
+        color: var(--primary-0);
+        &:hover {
+            background-color: var(--primary-0);
+            color: var(--text-30);
+        }
+    }
+    &.secondary {
+        background-color: var(--text-30);
+        border: 1px solid var(--text-30);
+        color: var(--text-15);
+        &:hover {
+            background-color: var(--text-20);
+            color: hsl(0, 0%, 22%);
+            border: 1px solid var(--text-20);
+        }
+    }
+}

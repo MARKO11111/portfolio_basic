@@ -1,0 +1,16 @@
+// 1. Base stuff
+@use 'base/base-index';
+
+// 2. Components
+@use 'components/components-index';
+
+// 3. Themes
+@use 'themes/default';
+
+// 4. Sections layout 
+@use 'layout/layout-index';
+
+// 5. Vendors, external stuff, in this case reset
+@use 'vendors/normalize';
+
+
