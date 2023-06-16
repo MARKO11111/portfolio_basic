@@ -1,10 +1,30 @@
+@use '../abstracts' as *;
+
 .toolbox_section {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    .section_wrapper {
+        padding: 6.25rem 5rem;
+        @include mq(medium) {
+            flex-direction: column;
+            padding: 4.25rem 3rem;
+        }
+    }
+
     .toolbox_wrapper {
         display: inline-grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, 150px);
         gap: 1.5rem;
+        width: 50%;
+        justify-content: center;
+        @include mq(medium) {
+            order: 2;
+            width: 100%;
+        }
+    }
+    .toolbox_header {
+        width: 50%;
+        @include mq(medium) {
+            width: 100%;
+        }
     }
 }
 
@@ -13,11 +33,11 @@
 }
 
 @keyframes myAnim {
-	0% {
-		transform: scale(0.5);
-	}
+    0% {
+        transform: scale(0.5);
+    }
 
-	100% {
-		transform: scale(1);
-	}
+    100% {
+        transform: scale(1);
+    }
 }

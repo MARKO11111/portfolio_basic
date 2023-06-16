@@ -5,14 +5,21 @@
 @use '../abstracts' as *;
 
 header {
-    padding: 1rem 0;
+    &.container {
+        padding: 1rem 0;
+
+        @include mq(large) {
+            padding: 1rem 1.5rem;
+        }
+    }
 }
 
 .profile_container {
     border-radius: 50% 50% 0 50%;
     overflow: hidden;
     position: relative;
-    width: 40%;
+    width: max(40%, 350px);
+
     .profile_title {
         position: absolute;
         bottom: 2rem;
@@ -24,6 +31,7 @@ header {
     .title {
         color: var(--text-30);
     }
+
     .subtitle {
         font-size: 1.5rem;
         color: var(--text-20);
@@ -34,4 +42,18 @@ header {
 .hero_left_content {
     width: 60%;
     padding-right: 14rem;
+
+    @include mq(large) {
+        padding-right: 0;
+    }
+    @include mq(medium) {
+        width: 100%;
+        order: 2;
+    }
+}
+
+.hero {
+    @include mq(medium) {
+        flex-direction: column;
+    }
 }

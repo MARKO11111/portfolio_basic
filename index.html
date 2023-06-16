@@ -29,7 +29,7 @@
           <button class="btn">Button</button>
         </div>
       </header>
-      <section class="container flex">
+      <section class="container flex hero">
         <div class="flex flex_column align_start gap_2 hero_left_content">
           <h1>Web page main <span class="inter_bold">lead header</span></h1>
           <p class="lh_base">Mattis aliquet faucibus senectus feugiat sapien mi diam
@@ -77,28 +77,31 @@
         </article>
       </div>
     </section>
-    <section class="toolbox_section flex gap_3 bckg_primary_10 border_radius_1 container">
-      <div class="toolbox_wrapper reveal">
-        <div class="toolbox"><img src="./src/img/tools/html5.svg" alt="html 5"></div>
-        <div class="toolbox"><img src="./src/img/tools/css3.svg" alt="css 3"></div>
-        <div class="toolbox"><img src="./src/img/tools/sass.svg" alt="sass"></div>
-        <div class="toolbox"><img src="./src/img/tools/ps.svg" alt="photoshop"></div>
-        <div class="toolbox"><img src="./src/img/tools/ai.svg" alt="illustrator"></div>
-        <div class="toolbox"><img src="./src/img/tools/Figma.svg" alt="Figma"></div>
-        <div class="toolbox"><img src="./src/img/tools/Github.svg" alt="Github"></div>
-        <div class="toolbox"><img src="./src/img/tools/Gitlab.svg" alt="Gitlab"></div>
-        <div class="toolbox"><img src="./src/img/tools/Storybook.svg" alt="Storybook"></div>
+    <section class="toolbox_section container">
+      <div class="section_wrapper flex gap_2 bckg_primary_10 border_radius_1">
+        <div class="toolbox_wrapper reveal">
+          <div class="toolbox"><img src="./src/img/tools/html5.svg" alt="html 5"></div>
+          <div class="toolbox"><img src="./src/img/tools/css3.svg" alt="css 3"></div>
+          <div class="toolbox"><img src="./src/img/tools/sass.svg" alt="sass"></div>
+          <div class="toolbox"><img src="./src/img/tools/ps.svg" alt="photoshop"></div>
+          <div class="toolbox"><img src="./src/img/tools/ai.svg" alt="illustrator"></div>
+          <div class="toolbox"><img src="./src/img/tools/Figma.svg" alt="Figma"></div>
+          <div class="toolbox"><img src="./src/img/tools/Github.svg" alt="Github"></div>
+          <div class="toolbox"><img src="./src/img/tools/Gitlab.svg" alt="Gitlab"></div>
+          <div class="toolbox"><img src="./src/img/tools/Storybook.svg" alt="Storybook"></div>
+        </div>
+        <div class="flex flex_column align_start gap_2 toolbox_header">
+          <h2>Tools</h2>
+          <p class="lh_base">Mattis aliquet faucibus senectus feugiat sapien mi diam nibh velit nunc purus elementum
+            faucibus lectuset mauris.</p>
+          <button class="btn">See all</button>
+        </div>
       </div>
-      <div class="flex flex_column align_start gap_2">
-        <h2>Tools</h2>
-        <p class="lh_base">Mattis aliquet faucibus senectus feugiat sapien mi diam nibh velit nunc purus elementum
-          faucibus lectuset mauris.</p>
-        <button class="btn">See all</button>
-      </div>
+
     </section>
     <section class="container benefits_section">
       <h2 class="text_center">Benefits</h2>
-      <div class="flex flex_space_between">
+      <div class="card_wrapper flex flex_space_between">
         <article class="flex flex_column text_center gap_2">
           <img src="./src/img/benefit_1.svg" class="img_filter" alt="benefit 1">
           <h4>Card header</h4>
@@ -122,33 +125,36 @@
         </article>
       </div>
     </section>
-    <section class="container bckg_primary_0 border_radius_1 contact">
-      <h2 class="text_center">Contact me</h2>
-      <form action="">
-        <div class="flex flex_column company align_start">
-          <label for="company" class="input_label">Company</label>
-          <input type="text" id="company" name="company" class="border_radius_1" placeholder="Your company">
-        </div>
-        <div class="flex flex_column name align_start">
-          <label for="name" class="input_label">Name</label>
-          <input type="text" id="name" name="name" class="border_radius_1" placeholder="Your name">
-        </div>
-        <div class="flex flex_column email align_start">
-          <label for="email" class="input_label">Email</label>
-          <input type="text" id="email" name="email" class="border_radius_1" placeholder="Email">
-        </div>
-        <div class="flex flex_column phone align_start">
-          <label for="phone" class="input_label">Phone</label>
-          <input type="text" id="phone" name="phone" class="border_radius_1" placeholder="Phone number">
-        </div>
-        <div class="flex flex_column message align_start">
-          <label for="message" class="input_label">Your message</label>
-          <textarea name="message" id="message" class="border_radius_1" placeholder="Enter Your message here..."></textarea>
-        </div>
-        <div class="flex button align_start justify_center">
-          <button class="btn secondary big">Send</button>
-        </div>
-      </form>
+    <section class="container contact">
+      <div class="section_wrapper bckg_primary_0 border_radius_1">
+        <h2 class="text_center">Contact me</h2>
+        <form action="">
+          <div class="flex flex_column company align_start">
+            <label for="company" class="input_label">Company</label>
+            <input type="text" id="company" name="company" class="border_radius_1" placeholder="Your company">
+          </div>
+          <div class="flex flex_column name align_start">
+            <label for="name" class="input_label">Name</label>
+            <input type="text" id="name" name="name" class="border_radius_1" placeholder="Your name">
+          </div>
+          <div class="flex flex_column email align_start">
+            <label for="email" class="input_label">Email</label>
+            <input type="text" id="email" name="email" class="border_radius_1" placeholder="Email">
+          </div>
+          <div class="flex flex_column phone align_start">
+            <label for="phone" class="input_label">Phone</label>
+            <input type="text" id="phone" name="phone" class="border_radius_1" placeholder="Phone number">
+          </div>
+          <div class="flex flex_column message align_start">
+            <label for="message" class="input_label">Your message</label>
+            <textarea name="message" id="message" class="border_radius_1"
+              placeholder="Enter Your message here..."></textarea>
+          </div>
+          <div class="flex button align_start justify_center">
+            <button class="btn secondary big">Send</button>
+          </div>
+        </form>
+      </div>
     </section>
     <footer>
       <div class="bckg_primary_10">

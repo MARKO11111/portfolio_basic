@@ -4,10 +4,19 @@
     h2 {
         margin-bottom: 2.5rem;
     }
+
     .card_wrapper {
+        @include mq(medium) {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
         article {
             padding: 2rem;
             max-width: 30%;
+
+            @include mq(medium) {
+                max-width: 100%;
+            }
         }
     }
 }

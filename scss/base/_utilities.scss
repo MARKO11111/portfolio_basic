@@ -9,6 +9,10 @@
   max-width: $max-width;
   margin: 0 auto;
   width: 100%;
+  padding: 6.25rem 0;
+  @include mq(large) {
+    padding: 3rem 1.5rem;
+  }
 }
 
 .flex {
@@ -84,4 +88,5 @@
 .border_radius_1 {
   border-radius: 1rem;
 }
+
 

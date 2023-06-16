@@ -23,10 +23,6 @@ main {
   color: var(--text-10);
 }
 
-section {
-  padding: 6.25rem 0;
-}
-
 @font-face {
   font-family: InterRegular;
   src: url(../src/fonts/Inter-Regular.ttf);
@@ -49,11 +45,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 2.2rem + 1.5vw, 4rem);
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 1.9rem + 0.5vw, 2.5rem);
 }
 
 h3 {
@@ -68,6 +64,12 @@ h4 {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  padding: 6.25rem 0;
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    padding: 3rem 1.5rem;
+  }
 }
 
 .flex {
@@ -308,11 +310,21 @@ textarea {
 footer {
   font-family: SoraSemibold, sans-serif;
   color: var(--text-20);
-  margin-top: 6.26rem;
+  margin-top: 6.25rem;
+}
+@media only screen and (max-width: 75em) {
+  footer {
+    margin-top: 3rem;
+  }
 }
 footer .bottom {
   padding: 1.25rem 0;
   font-size: 0.875rem;
+}
+@media only screen and (max-width: 40em) {
+  footer .bottom {
+    padding: 1.75rem 1.5rem;
+  }
 }
 footer .bottom span {
   color: var(--text-30);
@@ -320,19 +332,29 @@ footer .bottom span {
 footer .top {
   padding: 1.75rem 0;
 }
+@media only screen and (max-width: 75em) {
+  footer .top {
+    padding: 1.75rem 1.5rem;
+  }
+}
 footer a {
   display: flex;
 }
 
-header {
+header.container {
   padding: 1rem 0;
+}
+@media only screen and (max-width: 75em) {
+  header.container {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .profile_container {
   border-radius: 50% 50% 0 50%;
   overflow: hidden;
   position: relative;
-  width: 40%;
+  width: max(40%, 350px);
 }
 .profile_container .profile_title {
   position: absolute;
@@ -353,23 +375,72 @@ header {
   width: 60%;
   padding-right: 14rem;
 }
+@media only screen and (max-width: 75em) {
+  .hero_left_content {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 65em) {
+  .hero_left_content {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media only screen and (max-width: 65em) {
+  .hero {
+    flex-direction: column;
+  }
+}
 
 .skills_section h2 {
   margin-bottom: 2.5rem;
+}
+@media only screen and (max-width: 65em) {
+  .skills_section .card_wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 .skills_section .card_wrapper article {
   padding: 2rem;
   max-width: 30%;
 }
+@media only screen and (max-width: 65em) {
+  .skills_section .card_wrapper article {
+    max-width: 100%;
+  }
+}
 
-.toolbox_section {
-  padding-left: 5rem;
-  padding-right: 5rem;
+.toolbox_section .section_wrapper {
+  padding: 6.25rem 5rem;
+}
+@media only screen and (max-width: 65em) {
+  .toolbox_section .section_wrapper {
+    flex-direction: column;
+    padding: 4.25rem 3rem;
+  }
 }
 .toolbox_section .toolbox_wrapper {
   display: inline-grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 150px);
   gap: 1.5rem;
+  width: 50%;
+  justify-content: center;
+}
+@media only screen and (max-width: 65em) {
+  .toolbox_section .toolbox_wrapper {
+    order: 2;
+    width: 100%;
+  }
+}
+.toolbox_section .toolbox_header {
+  width: 50%;
+}
+@media only screen and (max-width: 65em) {
+  .toolbox_section .toolbox_header {
+    width: 100%;
+  }
 }
 
 .reveal.active {
@@ -391,10 +462,25 @@ header {
   padding: 2rem;
   max-width: 30%;
 }
+@media only screen and (max-width: 40em) {
+  .benefits_section article {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .benefits_section .card_wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
 
-.contact {
-  padding-left: 12.5rem;
-  padding-right: 12.5rem;
+.contact .section_wrapper {
+  padding: 6.25rem 12.5rem;
+}
+@media only screen and (max-width: 75em) {
+  .contact .section_wrapper {
+    padding: 4.25rem 3rem;
+  }
 }
 .contact form {
   display: grid;
@@ -419,6 +505,11 @@ header {
 }
 .contact form .button {
   grid-area: button;
+}
+@media only screen and (max-width: 65em) {
+  .contact form {
+    grid-template-areas: "company" "name" "email" "phone" "message" "button";
+  }
 }
 .contact h2 {
   color: var(--text-30);

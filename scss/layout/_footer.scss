@@ -7,17 +7,29 @@
 footer {
   font-family: $font-sora-semibold;
   color: var(--text-20);
-  margin-top: 6.26rem;
+  margin-top: 6.25rem;
+  @include mq(large) {
+    margin-top: 3rem;
+  }
   .bottom {
     padding: 1.25rem 0;
     font-size: $fs-small;
+    @include mq(small) {
+      padding: 1.75rem 1.5rem;
+    }
     span {
       color: var(--text-30);
     }
   }
+
   .top {
     padding: 1.75rem 0;
+
+    @include mq(large) {
+      padding: 1.75rem 1.5rem;
+    }
   }
+
   a {
     display: flex;
   }

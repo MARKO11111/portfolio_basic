@@ -6,11 +6,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: $fs-h1;
+  font-size: clamp($fs-h2, 2.2rem + 1.5vw, $fs-h1);
 }
 
 h2 {
-  font-size: $fs-h2;
+  font-size: clamp($fs-h3, 1.9rem + 0.5vw, $fs-h2);
 }
 
 h3 {

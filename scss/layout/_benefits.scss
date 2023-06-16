@@ -8,5 +8,14 @@
     article {
         padding: 2rem;
         max-width: 30%;
+        @include mq(small) {
+            max-width: 100%;
+        }
+    }
+    .card_wrapper {
+        @include mq(small) {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
     }
 }
