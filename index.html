@@ -1,180 +1,293 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio basic</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <meta
+      name="description"
+      content="Fundation project for portfolio purposes"
+    />
+    <meta name="author" content="Marko Bilic" />
+    <meta name="keywords" content="scss, portfolio, design, code" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio basic</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <meta name="description" content="Fundation project for portfolio purposes">
-  <meta name="author" content="Marko Bilic">
-  <meta name="keywords" content="scss, portfolio, design, code">
-</head>
-
-<body>
-  <main>
-    <div class="bckg_primary_10">
-      <header class="container flex flex_space_between">
-        <div><img src="./src/img/Logo.svg" class="img_filter" alt="main logo"></div>
-        <div class="flex gap_2">
-          <div class="flex gap_1">
-            <img src="./src/img/light_icon.svg" class="img_filter" alt="theme light icon">
-            <label class="switch">
-              <input type="checkbox" class="dark-mode">
-              <span class="slider"></span>
-            </label>
-
-            <img src="./src/img/clear_night.svg" class="img_filter" alt="theme dark icon">
+  <body>
+    <main>
+      <div class="bckg_primary_10">
+        <header class="container flex flex_space_between">
+          <div>
+            <img src="./src/img/Logo.svg" class="img_filter" alt="main logo" />
           </div>
-          <button class="btn">Button</button>
-        </div>
-      </header>
-      <section class="container flex hero">
-        <div class="flex flex_column align_start gap_2 hero_left_content">
-          <h1>Web page main <span class="inter_bold">lead header</span></h1>
-          <p class="lh_base">Mattis aliquet faucibus senectus feugiat sapien mi diam
-            nibh velit nunc purus elementum faucibus lectuset mauris.</p>
           <div class="flex gap_2">
-            <button class="btn big">Get in touch</button>
-            <button class="btn big outlined">Our studies</button>
+            <div class="flex gap_1">
+              <img
+                src="./src/img/light_icon.svg"
+                class="img_filter"
+                alt="theme light icon"
+              />
+              <label class="switch">
+                <input type="checkbox" class="dark-mode" />
+                <span class="slider"></span>
+              </label>
+
+              <img
+                src="./src/img/clear_night.svg"
+                class="img_filter"
+                alt="theme dark icon"
+              />
+            </div>
+            <button class="btn">Button</button>
           </div>
+        </header>
+        <section class="container flex hero">
+          <div class="flex flex_column align_start gap_2 hero_left_content">
+            <h1>Web page main <span class="inter_bold">lead header</span></h1>
+            <p class="lh_base">
+              Matis aliquet faucibus senectus feugiat sapien mi diam nibh velit
+              nunc purus elementum faucibus lectuset mauris.
+            </p>
+            <div class="flex gap_2">
+              <button class="btn big">Get in touch</button>
+              <button class="btn big outlined">Our studies</button>
+            </div>
+          </div>
+          <div class="profile_container">
+            <img
+              src="./src/img/Profile.png"
+              class="img_responsive"
+              alt="profile image"
+            />
+            <div class="profile_title text_right">
+              <h3 class="inter_bold title">Alisa Black</h3>
+              <p class="subtitle">Head of marketing</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="container skills_section">
+        <h2 class="text_center">Skills</h2>
+        <div class="card_wrapper flex flex_space_between">
+          <article
+            class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1"
+          >
+            <img src="./src/img/skill_1.svg" class="img_filter" alt="skill 1" />
+            <h4>Skill header</h4>
+            <p class="lh_base">
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Mauris tincidunt imperdiet
+              hendrerit. Fusce tortor turpis, facilisis ac efficitur eget,
+            </p>
+          </article>
+          <article
+            class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1"
+          >
+            <img src="./src/img/skill_2.svg" class="img_filter" alt="skill 2" />
+            <h4>Skill header</h4>
+            <p class="lh_base">
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Mauris tincidunt imperdiet
+              hendrerit. Fusce tortor turpis, facilisis ac efficitur eget,
+            </p>
+          </article>
+          <article
+            class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1"
+          >
+            <img src="./src/img/skill_3.svg" class="img_filter" alt="skill 3" />
+            <h4>Skill header</h4>
+            <p class="lh_base">
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Mauris tincidunt imperdiet
+              hendrerit. Fusce tortor turpis, facilisis ac efficitur eget,
+            </p>
+          </article>
         </div>
-        <div class="profile_container">
-          <img src="./src/img/Profile.png" class="img_responsive" alt="profile image">
-          <div class="profile_title text_right">
-            <h3 class="inter_bold title">Alisa Black</h3>
-            <p class="subtitle">Head of marketing</p>
+      </section>
+      <section class="toolbox_section container">
+        <div class="section_wrapper flex gap_2 bckg_primary_10 border_radius_1">
+          <div class="toolbox_wrapper reveal">
+            <div class="toolbox">
+              <img src="./src/img/tools/html5.svg" alt="html 5" />
+            </div>
+            <div class="toolbox">
+              <img src="./src/img/tools/css3.svg" alt="css 3" />
+            </div>
+            <div class="toolbox">
+              <img src="./src/img/tools/sass.svg" alt="sass" />
+            </div>
+            <div class="toolbox">
+              <img src="./src/img/tools/ps.svg" alt="photoshop" />
+            </div>
+            <div class="toolbox">
+              <img src="./src/img/tools/ai.svg" alt="illustrator" />
+            </div>
+            <div class="toolbox">
+              <img src="./src/img/tools/Figma.svg" alt="Figma" />
+            </div>
+            <div class="toolbox">
+              <img src="./src/img/tools/Github.svg" alt="Github" />
+            </div>
+            <div class="toolbox">
+              <img src="./src/img/tools/Gitlab.svg" alt="Gitlab" />
+            </div>
+            <div class="toolbox">
+              <img src="./src/img/tools/Storybook.svg" alt="Storybook" />
+            </div>
+          </div>
+          <div class="flex flex_column align_start gap_2 toolbox_header">
+            <h2>Tools</h2>
+            <p class="lh_base">
+              Mattis aliquet faucibus senectus feugiat sapien mi diam nibh velit
+              nunc purus elementum faucibus lectuset mauris.
+            </p>
+            <button class="btn">See all</button>
           </div>
         </div>
       </section>
-    </div>
-    <section class="container skills_section">
-      <h2 class="text_center">Skills</h2>
-      <div class="card_wrapper flex flex_space_between">
-        <article class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1">
-          <img src="./src/img/skill_1.svg" class="img_filter" alt="skill 1">
-          <h4>Skill header</h4>
-          <p class="lh_base">Pellentesque habitant morbi tristique senectus
-            et netus et malesuada fames ac turpis egestas.
-            Mauris tincidunt imperdiet hendrerit.
-            Fusce tortor turpis, facilisis ac efficitur eget, </p>
-        </article>
-        <article class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1">
-          <img src="./src/img/skill_2.svg" class="img_filter" alt="skill 2">
-          <h4>Skill header</h4>
-          <p class="lh_base">Pellentesque habitant morbi tristique senectus
-            et netus et malesuada fames ac turpis egestas.
-            Mauris tincidunt imperdiet hendrerit.
-            Fusce tortor turpis, facilisis ac efficitur eget, </p>
-        </article>
-        <article class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1">
-          <img src="./src/img/skill_3.svg" class="img_filter" alt="skill 3">
-          <h4>Skill header</h4>
-          <p class="lh_base">Pellentesque habitant morbi tristique senectus
-            et netus et malesuada fames ac turpis egestas.
-            Mauris tincidunt imperdiet hendrerit.
-            Fusce tortor turpis, facilisis ac efficitur eget, </p>
-        </article>
-      </div>
-    </section>
-    <section class="toolbox_section container">
-      <div class="section_wrapper flex gap_2 bckg_primary_10 border_radius_1">
-        <div class="toolbox_wrapper reveal">
-          <div class="toolbox"><img src="./src/img/tools/html5.svg" alt="html 5"></div>
-          <div class="toolbox"><img src="./src/img/tools/css3.svg" alt="css 3"></div>
-          <div class="toolbox"><img src="./src/img/tools/sass.svg" alt="sass"></div>
-          <div class="toolbox"><img src="./src/img/tools/ps.svg" alt="photoshop"></div>
-          <div class="toolbox"><img src="./src/img/tools/ai.svg" alt="illustrator"></div>
-          <div class="toolbox"><img src="./src/img/tools/Figma.svg" alt="Figma"></div>
-          <div class="toolbox"><img src="./src/img/tools/Github.svg" alt="Github"></div>
-          <div class="toolbox"><img src="./src/img/tools/Gitlab.svg" alt="Gitlab"></div>
-          <div class="toolbox"><img src="./src/img/tools/Storybook.svg" alt="Storybook"></div>
+      <section class="container benefits_section">
+        <h2 class="text_center">Benefits</h2>
+        <div class="card_wrapper flex flex_space_between">
+          <article class="flex flex_column text_center gap_2">
+            <img
+              src="./src/img/benefit_1.svg"
+              class="img_filter"
+              alt="benefit 1"
+            />
+            <h4>Card header</h4>
+            <p class="lh_base">
+              Sapien ultrices egestas at faucibus eu diam velit diam id amet
+              nibh quam rutrum diam diam natoque scelerisque.
+            </p>
+          </article>
+          <article class="flex flex_column text_center gap_2">
+            <img
+              src="./src/img/benefit_2.svg"
+              class="img_filter"
+              alt="benefit 2"
+            />
+            <h4>Card header</h4>
+            <p class="lh_base">
+              Sapien ultrices egestas at faucibus eu diam velit diam id amet
+              nibh quam rutrum diam diam natoque scelerisque.
+            </p>
+          </article>
+          <article class="flex flex_column text_center gap_2">
+            <img
+              src="./src/img/benefit_3.svg"
+              class="img_filter"
+              alt="benefit 3"
+            />
+            <h4>Card header</h4>
+            <p class="lh_base">
+              Sapien ultrices egestas at faucibus eu diam velit diam id amet
+              nibh quam rutrum diam diam natoque scelerisque.
+            </p>
+          </article>
         </div>
-        <div class="flex flex_column align_start gap_2 toolbox_header">
-          <h2>Tools</h2>
-          <p class="lh_base">Mattis aliquet faucibus senectus feugiat sapien mi diam nibh velit nunc purus elementum
-            faucibus lectuset mauris.</p>
-          <button class="btn">See all</button>
+      </section>
+      <section class="container contact">
+        <div class="section_wrapper bckg_primary_0 border_radius_1">
+          <h2 class="text_center">Contact me</h2>
+          <form action="">
+            <div class="flex flex_column company align_start">
+              <label for="company" class="input_label">Company</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="border_radius_1"
+                placeholder="Your company"
+              />
+            </div>
+            <div class="flex flex_column name align_start">
+              <label for="name" class="input_label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="border_radius_1"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="flex flex_column email align_start">
+              <label for="email" class="input_label">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="border_radius_1"
+                placeholder="Email"
+              />
+            </div>
+            <div class="flex flex_column phone align_start">
+              <label for="phone" class="input_label">Phone</label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                class="border_radius_1"
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="flex flex_column message align_start">
+              <label for="message" class="input_label">Your message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="border_radius_1"
+                placeholder="Enter Your message here..."
+              ></textarea>
+            </div>
+            <div class="flex button align_start justify_center">
+              <button class="btn secondary big">Send</button>
+            </div>
+          </form>
         </div>
-      </div>
-
-    </section>
-    <section class="container benefits_section">
-      <h2 class="text_center">Benefits</h2>
-      <div class="card_wrapper flex flex_space_between">
-        <article class="flex flex_column text_center gap_2">
-          <img src="./src/img/benefit_1.svg" class="img_filter" alt="benefit 1">
-          <h4>Card header</h4>
-          <p class="lh_base">Sapien ultrices egestas at faucibus eu diam
-            velit diam id amet nibh quam rutrum diam
-            diam natoque scelerisque. </p>
-        </article>
-        <article class="flex flex_column text_center gap_2">
-          <img src="./src/img/benefit_2.svg" class="img_filter" alt="benefit 2">
-          <h4>Card header</h4>
-          <p class="lh_base">Sapien ultrices egestas at faucibus eu diam
-            velit diam id amet nibh quam rutrum diam
-            diam natoque scelerisque. </p>
-        </article>
-        <article class="flex flex_column text_center gap_2">
-          <img src="./src/img/benefit_3.svg" class="img_filter" alt="benefit 3">
-          <h4>Card header</h4>
-          <p class="lh_base">Sapien ultrices egestas at faucibus eu diam
-            velit diam id amet nibh quam rutrum diam
-            diam natoque scelerisque. </p>
-        </article>
-      </div>
-    </section>
-    <section class="container contact">
-      <div class="section_wrapper bckg_primary_0 border_radius_1">
-        <h2 class="text_center">Contact me</h2>
-        <form action="">
-          <div class="flex flex_column company align_start">
-            <label for="company" class="input_label">Company</label>
-            <input type="text" id="company" name="company" class="border_radius_1" placeholder="Your company">
-          </div>
-          <div class="flex flex_column name align_start">
-            <label for="name" class="input_label">Name</label>
-            <input type="text" id="name" name="name" class="border_radius_1" placeholder="Your name">
-          </div>
-          <div class="flex flex_column email align_start">
-            <label for="email" class="input_label">Email</label>
-            <input type="text" id="email" name="email" class="border_radius_1" placeholder="Email">
-          </div>
-          <div class="flex flex_column phone align_start">
-            <label for="phone" class="input_label">Phone</label>
-            <input type="text" id="phone" name="phone" class="border_radius_1" placeholder="Phone number">
-          </div>
-          <div class="flex flex_column message align_start">
-            <label for="message" class="input_label">Your message</label>
-            <textarea name="message" id="message" class="border_radius_1"
-              placeholder="Enter Your message here..."></textarea>
-          </div>
-          <div class="flex button align_start justify_center">
-            <button class="btn secondary big">Send</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <footer>
-      <div class="bckg_primary_10">
-        <div class="container flex flex_space_between top">
-          <div><a href="#"><img src="./src/img/Logo.svg" class="img_filter" alt="main logo"></a></div>
-          <div class="flex gap_1">
-            <a href="#"><img src="./src/img/tweet.svg" class="img_filter" alt="tweeter"></a>
-            <a href="#"><img src="./src/img/linkedin.svg" class="img_filter" alt="linked in"></a>
-            <a href="#"><img src="./src/img/facebook.svg" class="img_filter" alt="facebook"></a>
+      </section>
+      <footer>
+        <div class="bckg_primary_10">
+          <div class="container flex flex_space_between top">
+            <div>
+              <a href="#"
+                ><img
+                  src="./src/img/Logo.svg"
+                  class="img_filter"
+                  alt="main logo"
+              /></a>
+            </div>
+            <div class="flex gap_1">
+              <a href="#"
+                ><img
+                  src="./src/img/tweet.svg"
+                  class="img_filter"
+                  alt="tweeter"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./src/img/linkedin.svg"
+                  class="img_filter"
+                  alt="linked in"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./src/img/facebook.svg"
+                  class="img_filter"
+                  alt="facebook"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bckg_primary_0 text_center bottom">
-        <p>© All rights reserved. Designed and developed by <span> Marko Bilic</span></p>
-      </div>
-    </footer>
-  </main>
+        <div class="bckg_primary_0 text_center bottom">
+          <p>
+            © All rights reserved. Designed and developed by
+            <span> Marko Bilic</span>
+          </p>
+        </div>
+      </footer>
+    </main>
 
-  <script src="./js/switch.js"></script>
-  <script src="./js/animation.js"></script>
-</body>
-
+    <script src="./js/switch.js"></script>
+    <script src="./js/animation.js"></script>
+  </body>
 </html>
