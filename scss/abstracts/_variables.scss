@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 
 /// container max-width
-@use 'functions' as *;
 
 $max-width: 1200px;
 
@@ -11,8 +10,6 @@ $max-width: 1200px;
 
 $font-inter-regular: InterRegular, sans-serif; 
 $font-inter-semibold: InterSemibold, sans-serif;
-$font-sora-regular: SoraRegular, sans-serif;
-$font-sora-semibold: SoraSemibold, sans-serif;
 
 /// font sizes
 

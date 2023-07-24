@@ -5,7 +5,6 @@
 @use '../abstracts' as *;
 
 footer {
-  font-family: $font-sora-semibold;
   color: var(--text-20);
   margin-top: 6.25rem;
   @include mq(large) {

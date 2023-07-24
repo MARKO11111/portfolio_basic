@@ -1,6 +1,6 @@
 html {
   font-size: 1rem;
-  font-family: SoraRegular, sans-serif, sans-serif;
+  font-family: InterRegular, sans-serif, sans-serif;
 }
 
 *,
@@ -32,12 +32,8 @@ main {
   src: url(../src/fonts/Inter-SemiBold.ttf);
 }
 @font-face {
-  font-family: SoraRegular;
-  src: url(../src/fonts/Sora-Regular.ttf);
-}
-@font-face {
-  font-family: SoraSemiBold;
-  src: url(../src/fonts/Sora-SemiBold.ttf);
+  font-family: InterBold;
+  src: url(../src/fonts/Inter-Bold.ttf);
 }
 h1, h2, h3, h4 {
   font-family: InterRegular, sans-serif;
@@ -153,7 +149,7 @@ h4 {
   color: var(--text-30);
   border-radius: 0.875rem;
   cursor: pointer;
-  font-family: SoraSemibold, sans-serif;
+  font-family: InterSemibold, sans-serif;
 }
 .btn:hover {
   background-color: hsl(160, 92%, 20%);
@@ -308,7 +304,6 @@ textarea {
 }
 
 footer {
-  font-family: SoraSemibold, sans-serif;
   color: var(--text-20);
   margin-top: 6.25rem;
 }
