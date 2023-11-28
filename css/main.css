@@ -320,6 +320,7 @@ footer {
 footer .bottom {
   padding: 1.25rem 0;
   font-size: 0.875rem;
+  background-color: var(--primary-0);
 }
 @media only screen and (max-width: 40em) {
   footer .bottom {
@@ -339,6 +340,10 @@ footer .top {
 }
 footer a {
   display: flex;
+}
+
+.dark footer .bottom {
+  background-color: var(--primary-20);
 }
 
 header.container {
